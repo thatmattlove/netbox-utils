@@ -1,5 +1,5 @@
 # netbox-utils
-Collection of random python scripts written to automate things I do regularly. Mostly written using [`pynetbox`](https://github.com/digitalocean/pynetbox).
+Collection of random python scripts written to automate things I do regularly in [Netbox](https://github.com/digitalocean/netbox). Mostly written using [`pynetbox`](https://github.com/digitalocean/pynetbox).
 
 ## Index
 

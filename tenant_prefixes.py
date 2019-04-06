@@ -14,8 +14,8 @@ prefix_search = nb.ipam.prefixes.filter(tenant=tenant_id, role=prefix_role)
 # Index results
 prefix_result = prefix_search[0]
 # Format Output
-fmt = "{:<20}{:<20}{:<10}{:<40}"
-header = ("Tenant", "Prefix Status", "Protocol", "Prefix")
+fmt = "{:<20}{:<20}{:<10}{:<10}{:<40}"
+header = ("Tenant", "Prefix Status", "Site", "Protocol", "Prefix")
 # Print Output in pretty-ish table
 print(fmt.format(*header))
 for key in prefix_search:
@@ -24,7 +24,8 @@ for key in prefix_search:
     fmt.format(
         val.tenant.name,
         str(val.status),
-        'IPv' + str(val.family),
+        str(val.site),
+        str(val.family),
         str(val),
     )
 )

@@ -8,6 +8,11 @@ Collection of random python scripts written to automate things I do regularly in
 |`tenant_create.py`  |Asks for input, creates tenant based on input                                              |Functional|
 |`tenant_prefixes.py`|Pulls a list of prefixes assigned to a particular tenant and belonging to a particular role|Functional|
 
+### `tenant_prefixes.py`
+#### Usage
+```console
+# python3 ./tenant_prefixes.py <tenant slug> <prefix role>
+```
 # License
 <a href="http://www.wtfpl.net/"><img
        src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
